@@ -213,6 +213,25 @@ body {
  appearance: none;
  background-image: url('assets/img/arrow.svg') no-repeat right;
 }
+.product__color, .product__size {
+  position: relative;
+}
+
+.product__color::after, .product__size::after {
+  content: '';
+  background: url(assets/img/arrow.svg) no-repeat center;
+  width: 20px;
+  height: 10px;
+  position: absolute;
+  right: 10px;
+  top: 55%;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.product__color.open.product__color::after, .product__size.open.product__size::after {
+  transform: rotate(180deg);
+}
 
 .product__color option, .product__size option {
   font-size:small;

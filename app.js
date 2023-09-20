@@ -5,19 +5,19 @@ const hours = document.querySelector('#hours')
 const minutes = document.querySelector('#minutes')
 const seconds = document.querySelector('#seconds')
 const timerContainer = document.querySelector('.timer')
+const productColor = document.querySelector('.product__color')
+const productSize = document.querySelector('.product__size')
 
 productVariants.forEach((variant) => {
     variant.addEventListener('click', () => {
         productVariants.forEach(variant => variant.classList.remove('active'))
         variant.classList.add('active')
-        console.log(colorOption.value)
         colorOption.value = variant.firstElementChild.id
         productImage.firstElementChild.src = variant.firstElementChild.src
     })   
 })
 
 colorOption.addEventListener('click', () => {
-    console.log(colorOption.value)
     productVariants.forEach( variant => {
         if(variant.firstElementChild.id === colorOption.value) {
             productVariants.forEach(variant => variant.classList.remove('active'))
@@ -25,6 +25,13 @@ colorOption.addEventListener('click', () => {
             productImage.firstElementChild.src = variant.firstElementChild.src
         } 
     })  
+})
+
+productColor.addEventListener('click', () => {
+    productColor.classList.toggle('open')
+})
+productSize.addEventListener('click', () => {
+    productSize.classList.toggle('open')
 })
 
 const countDownTimer = (h,m,s) => {
