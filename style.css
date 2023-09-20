@@ -1,0 +1,237 @@
+@font-face {
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 600;
+  src: local('Gotham Pro'), url("assets/fonts/gothampro.ttf") format('ttf')
+};
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Gotham Pro", sans-serif;
+  color: #2C2B31;
+  padding: 0;
+  margin: 0;
+  background-color: #fff3f3;
+}
+
+.bold {
+  font-weight: 600;
+}
+.container {
+  padding: 5px;
+}
+
+.offer {
+  background-color: #f19d2f;
+  padding: 10px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  display: block;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.header {
+  background-color: #ffd1ac;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 19px;
+}
+
+.logo p {
+  font-weight: 500;
+}
+
+.logo img {
+  width: 218px;
+}
+.hero {
+    position: relative;
+}
+
+.hero__image img {
+    width: 100%;
+}
+
+.hero__limit {
+    text-align: center;
+    background-color: #F19D2F;
+    color: #ffffff;
+    position: absolute;
+    bottom: 14px;
+    left: 14px;
+    padding: 5px;
+    border-radius: 7px;
+}
+.hero__limit p {
+    text-transform: uppercase;
+    margin: 10px;
+    line-height: 0;
+    font-weight: 800;
+    font-size: 10px;
+}
+.hero__limit span {
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.hero__price {
+    background-color: #37D997;
+    color: #ffffff;
+    text-align: center;
+    bottom: 14px;
+    right: 14px;
+    position: absolute;
+    padding: 7px;
+    border-radius: 7px;
+}
+
+.hero__price p {
+    position: relative;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 0;
+    margin: 10px;
+}
+.hero__price p::after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+    background-color: #E27500;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+.hero__price span {
+    font-size: 24px;
+    font-weight: 600;
+}
+.product {
+    padding: 0 16px;
+}
+
+.product__header {
+    display: flex;
+    font-size: 12px;
+    justify-content: space-between;
+}
+
+.product__trust {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.product__sell {
+  display: block;
+  align-self: center;
+  color: #37D997;
+}
+
+.product__title {
+  text-transform: uppercase;
+}
+
+.product__image img {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: contain;
+}
+
+.product__variables {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.product__variant img {
+  width: 80px;
+  height: 66px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.product__variant.active {
+  opacity: 0.4;
+}
+
+.product__conditions {
+  margin: 10px;
+}
+
+.product__reviews {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.product__reviews img {
+  width: 14px;
+  height: 13px;
+}
+
+.product__reviews p {
+  margin-left: 6px;
+}
+
+.product__options {
+  display: flex;
+  justify-content: space-between;
+}
+.product__options label {
+  text-align: center;
+  font-size: 12px;
+}
+
+.product__color, .product__size {
+  display: flex;
+  flex-direction: column;
+}
+
+.product__color select, .product__size select {
+ padding: 15px 30px;
+ border-radius: 15px;
+ border: none;
+ background-color: #ffffff;
+ text-align: center;
+ font-size: large;
+ font-weight: 600;
+ text-transform: uppercase;
+ width: 170px;
+ appearance: none;
+ background-image: url('assets/img/arrow.svg') no-repeat right;
+}
+
+.product__color option, .product__size option {
+  font-size:small;
+}
+
+
+.product__buy {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+  background-color: #37D997;
+  color: #ffffff;
+  font-size: 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
