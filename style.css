@@ -19,6 +19,11 @@ body {
   background-color: #fff3f3;
 }
 
+.wrapper {
+  max-width: 390px;
+  margin: 0 auto;
+}
+
 .bold {
   font-weight: 600;
 }

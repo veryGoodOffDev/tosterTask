@@ -17,6 +17,15 @@ productVariants.forEach((variant) => {
     })   
 })
 
+console.log(colorOption.childNodes)
+colorOption.childNodes.forEach(child => {
+    child.addEventListener('click', () => {
+        console.log(child.value)
+        // productColor.classList.remove('open')
+        // productSize.classList.remove('open')
+    })
+})
+
 colorOption.addEventListener('click', () => {
     productVariants.forEach( variant => {
         if(variant.firstElementChild.id === colorOption.value) {
